@@ -16,6 +16,8 @@ var quickSort = function (nums, left, right) {
       } else {
         // 此处else不可去掉，否则会l++ 或r--后，有某个值未比较就跳出循环
         l++;
+        // 此处index更新不可去掉，否则[[1,4],[0,2],[3,5]]无法正常排序
+        index = l;
       }
 
     } else {
@@ -26,6 +28,7 @@ var quickSort = function (nums, left, right) {
       } else {
         // 此处else不可去掉，否则会l++ 或r--后，有某个值未比较就跳出循环
         r--;
+        index = r;
       }
     }
   }
