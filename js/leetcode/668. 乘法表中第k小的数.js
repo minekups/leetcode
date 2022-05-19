@@ -41,3 +41,5 @@ var getCount = function (x, m, n, k) {
   return count;
 }
 // findKthNumber(3,3,5);
+
+//LC378 <= LC668 < LC786
