@@ -29,7 +29,7 @@ var binarySearch = function (nums, target, left, right, result) {
         let mid = l + ((r - l) >> 1);
         if (nums[mid] === target) {
           result.index = mid;
-          break;
+          return;
         } else if (nums[mid] > target) {
           r = mid - 1;
         } else {
