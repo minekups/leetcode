@@ -14,7 +14,7 @@ var kthSmallest = function (matrix, k) {
     while (l < r) {
       debugger;
       // x = ~~((l + r) / 2);
-      x = l + ((r - l) >> 2);
+      x = l + ((r - l) >> 1);
       let count = getCount(matrix, x);
       if (count > k) {
         r = x;
