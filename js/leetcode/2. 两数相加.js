@@ -24,23 +24,28 @@ var addTwoNumbers = function (l1, l2) {
       currentNode.next = node;
       currentNode = node;
     } else {
-      if(!cNode){
-        if(l1){
-          cNode = l1;
-        } else {
-          cNode = l2;
-        }
-      }
-      if(lastNum < 1){
-        currentNode.next = cNode;
-        break;
+      if (l1) {
+
       } else {
-        let node = new ListNode((cNode.val + 1)%10,null);
-        lastNum = ~~((cNode.val + 1)/10);
-        cNode = cNode.next;
-        currentNode.next = node;
-        currentNode = node;
+
       }
+      // if(!cNode){
+      //   if(l1){
+      //     cNode = l1;
+      //   } else {
+      //     cNode = l2;
+      //   }
+      // }
+      // if(lastNum < 1){
+      //   currentNode.next = cNode;
+      //   break;
+      // } else {
+      //   let node = new ListNode((cNode.val + 1)%10,null);
+      //   lastNum = ~~((cNode.val + 1)/10);
+      //   cNode = cNode.next;
+      //   currentNode.next = node;
+      //   currentNode = node;
+      // }
     }
     // else if (l1) {
     //   if (lastNum < 1) {
